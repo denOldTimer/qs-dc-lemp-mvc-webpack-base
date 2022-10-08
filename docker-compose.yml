@@ -1,0 +1,53 @@
+version: "3"
+
+services:
+  #nginx
+  qsnginx:
+    container_name: qsnginx
+    image: nginx:stable-alpine
+    restart: always
+    ports:
+      - "9580:80"
+    volumes:
+      - ./project:/var/www/project
+      - ./dockerfiles/nginx/default.conf:/etc/nginx/conf.d/default.conf
+
+  #php
+  qsapp:
+    container_name: qsapp
+    build:
+      context: .
+      dockerfile: ./dockerfiles/php/Dockerfile
+    restart: always
+    # ports:
+    #   - "127.0.0.1:9000:9000"
+    volumes:
+      - ./project:/var/www/project
+
+  # #db
+  qsdb:
+    container_name: qsdb
+    platform: linux/x86_64
+    image: mysql:8
+    # ports:
+    #   - 9586:3306
+    volumes:
+      - qsdata:/var/lib/mysql
+    restart: always # always restart unless stopped manually
+    environment:
+      MYSQL_DATABASE: quickstart
+      MYSQL_ROOT_PASSWORD: r00tadmin
+
+  qsmyadmin:
+    container_name: qsmyadmin
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: qsdb
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    ports:
+      - 9581:80
+
+volumes:
+  qsdata:
+    driver: local
