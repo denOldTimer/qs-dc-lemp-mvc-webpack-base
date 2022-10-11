@@ -17,3 +17,15 @@ The whole idee of this project is to create a starter template for projects.
 
 If you wish to try it out grabe a fork and enjoy.
 Please feel free to add any issues/request/questions you may have in to github issues section.
+
+A few things to note:
+
+Open Ports:
+
+- ports : 9580 => http://localhost:9580 => app
+- ports : 9581 => http://localhost:9581 => phpMyAdmin
+
+Closed Ports:
+
+- ports : 9000 => php poort not externally needed
+- ports : 9586 => MySql if needed can be opened
