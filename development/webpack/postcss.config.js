@@ -1,10 +1,17 @@
+const autoprefixer = require("autoprefixer");
+const postcssImport = require("postcss-import");
+const cssNano = require("cssnano");
+//const purgecss = require("@fullhuman/postcss-purgecss");
+
 module.exports = {
-  plugins: {
-    "postcss-import": {},
-    autoprefixer: {},
-    "postcss-preset-env": {
-      browsers: "last 2 versions",
-    },
-    cssnano: {},
-  },
+  plugins: [
+    autoprefixer,
+    postcssImport,
+    // purgecss({
+    //   content: ["../src/**/*.phtml"],
+    // }),
+    cssNano({
+      preset: "default",
+    }),
+  ],
 };

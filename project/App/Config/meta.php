@@ -33,7 +33,7 @@ $google_verification_code = "------ Google Verification Code -------";
 $twitter_handle = "@YourTwitterHandle";
 $twitter_domain = "Widepack";
 
-$pintrest_verification_code = "------ Pintrest Verification Code -------";
+$pintRest_verification_code = "------ Pintrest Verification Code -------";
 
 
 
@@ -59,7 +59,7 @@ return array(
   'scMetaOgImage'                 =>    $company_img_dir,
   'scTwitterSite'                 =>    $twitter_handle,
   'scTwitterDomain'               =>    $twitter_domain,
-  'scPintrestKey'                 =>    $pintrest_verification_code
+  'scPintRestKey'                 =>    $pintRest_verification_code
 );
 
 

@@ -1,0 +1,34 @@
+footer {
+  /* position: fixed;
+  left: 0;
+  bottom: 0; */
+  width: 100%;
+  text-align: center;
+  background-color: var(--surface4);
+  color: var(--text1);
+
+  font-family: var(--ff-brand);
+  font-size: var(--fs-300);
+  padding-block: 1.5rem;
+
+  .domain-name {
+    font-weight: var(--fw-600);
+    font-family: var(--ff-brand);
+    letter-spacing: 0.1rem;
+    color: var(--text-accent);
+  }
+
+  .scorpio,
+  .scorpio > a {
+    color: var(--text-scorpio);
+    font-weight: var(--fw-600);
+    letter-spacing: 0.1rem;
+
+    > a,
+    > a:hover,
+    > a:active,
+    > a:visited {
+      color: var(--text-scorpio);
+    }
+  }
+}

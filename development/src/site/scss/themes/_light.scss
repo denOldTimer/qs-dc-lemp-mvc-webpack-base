@@ -1,0 +1,50 @@
+/* THEME LIGHT */
+
+@use '../base/colors';
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+
+    --brand-hue: var(--clr-boston-hue);
+    --accent-hue: var(--clr-fern-hue);
+    --scorpio-hue: var(--clr-crimson-hue);
+    --sat: var(--clr-saturation);
+    --light: var(--clr-light);
+
+    /* set defaults */
+    --brand: hsl(var(--brand-hue) var(--sat) var(--light));
+    --accent: hsl(var(--accent-hue) var(--sat) var(--light));
+    --text-brand: hsl(var(--brand-hue) var(--sat) var(--light));
+    --text-accent: hsl(var(--accent-hue) var(--sat) var(--light));
+    --text-scorpio: hsl(var(--scorpio-hue) var(--sat) var(--light));
+    --text1: hsl(var(--brand-hue) var(--sat) 10%);
+    --text2: hsl(var(--brand-hue) 30% 30%);
+    --text3: hsl(var(--brand-hue) 20% 99%);
+    --surface1: hsl(var(--brand-hue) 20% 85%);
+    --surface2: hsl(var(--brand-hue) 20% 99%);
+    --surface3: hsl(var(--brand-hue) 20% 92%);
+    --surface4: hsl(var(--brand-hue) 25% 80%);
+    --shadow: var(--brand-hue) 10% 20%;
+    --shadow-strength: 0.02;
+  }
+}
+
+/*Selector Html class */
+[color-scheme='light'] {
+  color-scheme: light;
+
+  --brand: hsl(var(--brand-hue) var(--sat) var(--light));
+  --accent: hsl(var(--accent-hue) var(--sat) var(--light));
+  --text-brand: hsl(var(--brand-hue) var(--sat) var(--light));
+  --text-accent: hsl(var(--accent-hue) var(--sat) var(--light));
+  --text-scorpio: hsl(var(--scorpio-hue) var(--sat) var(--light));
+  --text1: hsl(var(--brand-hue) var(--sat) 10%);
+  --text2: hsl(var(--brand-hue) 30% 30%);
+  --surface1: hsl(var(--brand-hue) 25% 90%);
+  --surface2: hsl(var(--brand-hue) 20% 99%);
+  --surface3: hsl(var(--brand-hue) 20% 92%);
+  --surface4: hsl(var(--brand-hue) 20% 85%);
+  --shadow: var(--brand-hue) 10% 20%;
+  --shadow-strength: 0.02;
+}

@@ -20,9 +20,6 @@ const CSSLoaderDev = {
   use: [
     {
       loader: MiniCssExtractPlugin.loader,
-      // options: {
-      //   publicPath: path.resolve(__dirname, '../dist/css/')
-      // }
     },
     {
       loader: "css-loader",
@@ -68,32 +65,22 @@ const AdminPhtmlLoader = {
 
 // Images
 const ImageLoader = {
-  test: /\.(png|jpeg|jpg|gif|svg)$/,
+  test: /\.(png|jpeg|jpg|gif|svg)$/i,
+  type: "asset/resource",
   exclude: [path.resolve(__dirname, "./node_modules"), [/fonts/]],
-  use: [
-    {
-      loader: "file-loader",
-      options: {
-        name: "[name].[ext]",
-        outputPath: "images/",
-      },
-    },
-  ],
+  generator: {
+    filename: "img/[name][ext]",
+  },
 };
 
 // Fonts
 const FontLoader = {
-  test: /\.(svg|eot|ttf|woff|woff2)$/,
+  test: /\.(svg|eot|ttf|woff|woff2)$/i,
+  type: "asset/resource",
   exclude: [path.resolve(__dirname, "./node_modules"), [/img/]],
-  use: [
-    {
-      loader: "file-loader",
-      options: {
-        name: "[name].[ext]",
-        outputPath: "fonts/",
-      },
-    },
-  ],
+  generator: {
+    filename: "fonts/[name][ext]",
+  },
 };
 
 // Font-awesome;

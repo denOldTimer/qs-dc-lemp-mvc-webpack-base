@@ -1,0 +1,83 @@
+{
+  "trans": {
+    "menu": {
+      "home": "Home",
+      "about": "Bedrijf",
+      "services": "Diensten",
+      "products": "Produkten",
+      "sales": "Verkoop",
+      "contact": "Contact"
+    },
+"cta": {
+      "home": "Neem contact op met het verkoopteam"
+    },
+
+    "bio": {
+      "title": "Ons Bedrijf",
+      "p1": "Wij zijn sinds 2006 een importeur / groothandel in verpakkingen met een uitgebreid assortiment voor de B2B markt.",
+      "p2": "Ons ervaren verkoopteam staat klaar om u te ondersteunen in de keuze en ontwikkeling van de verpakking op maat van uw bedrijf.",
+      "p3": "Wij geloven in langetermijn relaties, zowel met onze klanten als leveranciers verspreid over gans Europa.",
+      "p4": "Dankzij dit wederzijds vertrouwen kunnen we u competitieve prijzen aanbieden zonder in te boeten aan service en flexibiliteit.",
+      "p5": "Indien u verdere vragen hebt, contacteer ons gerust. We staan voor u klaar."
+    }, 
+
+    "why": {
+        "title": "Waarom kiezen voor WidePack",
+        "p1": "WidePack beheert dagelijks meerdere orders verpakkingsmateriaal voor onze klanten.",
+        "p2": "Dus meer dan een decennium van solide en gezonde verstandhouding met klanten, leveranciers, drukkers en logistiek.",
+        "p3": "WidePack gelooft in efficiëntie, communicatie en in een directe manier van aanpak.",
+        "p4": "De logistieke mogelijkheden en diensten die wij onze klanten kunnen bieden zoals magazijnbuffering, omstapeling, directe levering enz.",
+        "p5": "",
+        "p6": ""
+        
+    },
+
+    "buffer": {
+      "title": "buffer warehouse",
+      "p1": "Offers customers and there customers a means to a secure supply-chain.",
+      "p2": "Buffer warehouse for Product transition to a new design.",
+      "p3": "Buffer warehouse for Seasonal Products, Short Periode High Volume Requirements",
+      "p4": "Buffer warehouse for new Product Spin ups and testing",
+      "p5": "Buffer warehouse for restacking and or repacking",
+      "p6": ""
+    },
+
+    "restack": {
+      "title": "restacking & repacking",
+      "p1": "Vendors prefer stacking pallets to the max of shipping container dimensions, roughly 2.5m high.",
+      "p2": "Thus reducing the need of pallets during long haul shipping.",
+      "p3": "Where by increasing product quantity during shipping.",
+      "p4": "The logistical opportunities and services that we can offer our customers like warehouse buffering, restacking, direct delivery and etc.",
+      "p5": "",
+      "p6": "How ever..",
+      "p7": "Client-side this can cause several issues:",
+      "l1": "product SKU requirements, does not meet the needs of the production-machine",
+      "l2": "SKU shelving requirements, (Height, Weight)",
+      "l3": "Environnemental safety, pallets stacked to heigh have tendencies of falling over.",
+      "l4": "Time, pallets stacked to high require third-party tools to reach.",
+      "l5": "Employee labour issues: breach in labour contract requirements, long-term health issues."
+    },
+   
+    "forms": {
+      "name": "Naam",
+      "address": "Adres",
+      "vat": "BTW",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "phone": "Telefoon / Mobile",
+      "message": "Bericht",
+      "send": "Verzenden",
+      "txt-name": "Uw naam ..",
+      "txt-email": "Uw e-mail adres..",
+      "txt-phone": "+32 456 45 56 67",
+      "txt-msg": "Uw bericht, verzoek .."
+    },
+
+    "contact": {
+      "admin": "Administratie",
+      "sales": "Verkoop Team",
+      "bio": "Omtrent Ons",
+      "wh": "Magazijn"
+    }
+  }
+}

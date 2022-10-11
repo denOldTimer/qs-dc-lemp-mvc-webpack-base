@@ -16,6 +16,14 @@ return (object) array(
   //2. REQUEST_URI has no action => index
   '/home'  => ['lang' => 'en', 'namespace' => 'Site', 'controller' => 'Home', 'action' => 'index'],
 
+  '/{lang}/home'            => ['namespace' => 'Site', 'controller' => 'Home', 'action' => 'index']
+
+  '/{lang}/home/index'      => ['namespace' => 'Site', 'controller' => 'Home', 'action' => 'index'],
+
+  '/theme'  => ['lang' => 'en', 'namespace' => 'Site', 'controller' => 'Theme', 'action' => 'index'],
+  '/markdown'  => ['lang' => 'en', 'namespace' => 'Site', 'controller' => 'Markdown', 'action' => 'index'],
+  '/markdown/new'  => ['lang' => 'en', 'namespace' => 'Site', 'controller' => 'Markdown', 'action' => 'new'],
+
   //TODO PUT THE REST OF THE FRONTEND ROUTES IN THE DATABASE
 
 

@@ -7,29 +7,29 @@ const plugins = require("./plugins");
 
 module.exports = {
   entry: {
-    "site/app": [
-      path.resolve(__dirname, "../src/site/app/app.js"),
-      path.resolve(__dirname, "../src/site/app/app.scss"),
-      path.resolve(__dirname, "../src/site/app/header.phtml"),
-      path.resolve(__dirname, "../src/site/app/footer.phtml"),
-      path.resolve(__dirname, "../src/site/app/navigation.phtml"),
+    "site/navigation": [
+      path.resolve(__dirname, "../src/site/js/navigation.js"),
+      path.resolve(__dirname, "../src/site/views/navigation.phtml"),
+      path.resolve(__dirname, "../src/site/views/header.phtml"),
+      path.resolve(__dirname, "../src/site/views/footer.phtml"),
+    ],
+    "site/theme": [
+      path.resolve(__dirname, "../src/site/js/theme.js"),
+      path.resolve(__dirname, "../src/site/scss/theme.scss"),
+      path.resolve(__dirname, "../src/site/views/theme.phtml"),
+    ],
+    "site/markdown": [
+      path.resolve(__dirname, "../src/site/js/markdown.js"),
+      path.resolve(__dirname, "../src/site/scss/markdown.scss"),
+      path.resolve(__dirname, "../src/site/views/markdown.phtml"),
     ],
     "site/home": [
-      path.resolve(__dirname, "../src/site/home/home.js"),
-      path.resolve(__dirname, "../src/site/home/home.scss"),
-      path.resolve(__dirname, "../src/site/home/home.phtml"),
+      path.resolve(__dirname, "../src/site/js/home.js"),
+      path.resolve(__dirname, "../src/site/scss/home.scss"),
+      path.resolve(__dirname, "../src/site/views/home.phtml"),
     ],
 
-    "admin/login": [
-      path.resolve(__dirname, "../src/admin/login/login.js"),
-      path.resolve(__dirname, "../src/admin/login/login.scss"),
-      path.resolve(__dirname, "../src/admin/login/login.phtml"),
-    ],
-    "admin/logout": [
-      path.resolve(__dirname, "../src/admin/logout/logout.phtml"),
-      path.resolve(__dirname, "../src/admin/logout/logout.js"),
-      path.resolve(__dirname, "../src/admin/logout/logout.scss"),
-    ],
+
   },
 
   ///
@@ -44,15 +44,15 @@ module.exports = {
     ],
   },
   output: {
-    filename: "[name].js",
-    path: path.resolve(__dirname, "../../project/public"),
+    filename: "js/[name].js",
+    path: path.resolve(__dirname, "../../project/public/"),
   },
   plugins: [
     new webpack.ProgressPlugin(),
     plugins.CleanWebpackPlugin,
-    //plugins.PurgecssPlugin,
+    plugins.PurgecssPlugin,
     plugins.ESLintPlugin,
-    plugins.StyleLintPlugin,
+    //plugins.StyleLintPlugin,
     plugins.MiniCssExtractPlugin,
     plugins.CopyPlugin,
   ],
