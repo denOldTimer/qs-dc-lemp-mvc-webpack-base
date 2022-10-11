@@ -6,8 +6,8 @@
   :root {
     color-scheme: light;
 
-    --brand-hue: var(--clr-boston-hue);
-    --accent-hue: var(--clr-fern-hue);
+    --brand-hue: var(--clr-blue-hue);
+    --accent-hue: var(--clr-crimson-hue);
     --scorpio-hue: var(--clr-crimson-hue);
     --sat: var(--clr-saturation);
     --light: var(--clr-light);
@@ -21,10 +21,10 @@
     --text1: hsl(var(--brand-hue) var(--sat) 10%);
     --text2: hsl(var(--brand-hue) 30% 30%);
     --text3: hsl(var(--brand-hue) 20% 99%);
-    --surface1: hsl(var(--brand-hue) 20% 85%);
-    --surface2: hsl(var(--brand-hue) 20% 99%);
-    --surface3: hsl(var(--brand-hue) 20% 92%);
-    --surface4: hsl(var(--brand-hue) 25% 80%);
+    --surface1: hsl(var(--brand-hue) 20% 75%);
+    --surface2: hsl(var(--brand-hue) 20% 89%);
+    --surface3: hsl(var(--brand-hue) 20% 82%);
+    --surface4: hsl(var(--brand-hue) 25% 70%);
     --shadow: var(--brand-hue) 10% 20%;
     --shadow-strength: 0.02;
   }
@@ -41,10 +41,10 @@
   --text-scorpio: hsl(var(--scorpio-hue) var(--sat) var(--light));
   --text1: hsl(var(--brand-hue) var(--sat) 10%);
   --text2: hsl(var(--brand-hue) 30% 30%);
-  --surface1: hsl(var(--brand-hue) 25% 90%);
-  --surface2: hsl(var(--brand-hue) 20% 99%);
-  --surface3: hsl(var(--brand-hue) 20% 92%);
-  --surface4: hsl(var(--brand-hue) 20% 85%);
+  --surface1: hsl(var(--brand-hue) 25% 70%);
+  --surface2: hsl(var(--brand-hue) 20% 89%);
+  --surface3: hsl(var(--brand-hue) 20% 82%);
+  --surface4: hsl(var(--brand-hue) 20% 75%);
   --shadow: var(--brand-hue) 10% 20%;
   --shadow-strength: 0.02;
 }

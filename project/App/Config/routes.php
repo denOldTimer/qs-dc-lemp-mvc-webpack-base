@@ -16,7 +16,7 @@ return (object) array(
   //2. REQUEST_URI has no action => index
   '/home'  => ['lang' => 'en', 'namespace' => 'Site', 'controller' => 'Home', 'action' => 'index'],
 
-  '/{lang}/home'            => ['namespace' => 'Site', 'controller' => 'Home', 'action' => 'index']
+  '/{lang}/home'            => ['namespace' => 'Site', 'controller' => 'Home', 'action' => 'index'],
 
   '/{lang}/home/index'      => ['namespace' => 'Site', 'controller' => 'Home', 'action' => 'index'],
 

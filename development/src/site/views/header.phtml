@@ -1,67 +1,65 @@
 <!DOCTYPE html>
-<html lang="<?= $scMetaLanguage ?>" dir="ltr" color-scheme="auto">
+<html lang="<?= $scMetaLanguage ?>" dir="ltr" color-scheme="dark">
 
-  <head>
-    <meta charset="<?= $scMetaCharset ?>">
-    <meta name="google-site-verification" content="<?= $scMetaGoogleSiteVerification ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="<?= $scMetaDescription ?>">
-    <meta name="Keywords" content="<?= $scMetaKeywords ?>">
-    <meta name="Copyright" content="<?= $scMetaOgSiteName ?>">
-    <!--Facebook-->
-    <meta property="og:site_name" content="<?= $scMetaOgSiteName ?>">
-    <meta property="og:url" content="<?= $scMetaOgUrl ?>">
-    <meta property="og:type" content="<?= $scMetaOgType ?>">
-    <meta property="og:title" content="<?= $scMetaOgTitle . '|' . $scMetaOgSiteName ?> " />
-    <meta property=" og:description" content="<?= $scMetaOgDescription; ?>">
-    <!--Next image => SGV file is best scalable-->
-    <meta property="og:image" content="<?= $scMetaOgImage ?>">
-    <!--Twitter meta-->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="<?= $scMetaDescription ?>" />
-    <meta name="twitter:title" content="<?= $scMetaOgTitle . '|' . $scMetaOgSiteName ?> " />
-    <meta name="twitter:site" content="<?= $scTwitterSite; ?>" />
-    <meta name="twitter:domain" content="<?= $scTwitterDomain ?>" />
-    <meta name="twitter:image" content="<?= $scMetaOgImage; ?>" />
-    <meta name="twitter:creator" content="<?= $scTwitterSite; ?>" />
-    <!--PintRest meta-->
-    <meta name="p:domain_verify" content="<?= $scPintRestKey; ?>" />
-    <!--Favicon meta-->
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicon/android-icon-48x48.png">
-    <link rel="icon" type="image/png" sizes="72x72" href="/favicon/android-icon-72x72.png">
-    <link rel="icon" type="image/png" sizes="144x144" href="/favicon/android-icon-144x144.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+<head>
+  <meta charset="<?= $scMetaCharset ?>">
+  <meta name="google-site-verification" content="<?= $scMetaGoogleSiteVerification ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="<?= $scMetaDescription ?>">
+  <meta name="Keywords" content="<?= $scMetaKeywords ?>">
+  <meta name="Copyright" content="<?= $scMetaOgSiteName ?>">
+  <!--Facebook-->
+  <meta property="og:site_name" content="<?= $scMetaOgSiteName ?>">
+  <meta property="og:url" content="<?= $scMetaOgUrl ?>">
+  <meta property="og:type" content="<?= $scMetaOgType ?>">
+  <meta property="og:title" content="<?= $scMetaOgTitle . '|' . $scMetaOgSiteName ?> " />
+  <meta property=" og:description" content="<?= $scMetaOgDescription; ?>">
+  <!--Next image => SGV file is best scalable-->
+  <meta property="og:image" content="<?= $scMetaOgImage ?>">
+  <!--Twitter meta-->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:description" content="<?= $scMetaDescription ?>" />
+  <meta name="twitter:title" content="<?= $scMetaOgTitle . '|' . $scMetaOgSiteName ?> " />
+  <meta name="twitter:site" content="<?= $scTwitterSite; ?>" />
+  <meta name="twitter:domain" content="<?= $scTwitterDomain ?>" />
+  <meta name="twitter:image" content="<?= $scMetaOgImage; ?>" />
+  <meta name="twitter:creator" content="<?= $scTwitterSite; ?>" />
+  <!--PintRest meta-->
+  <meta name="p:domain_verify" content="<?= $scPintRestKey; ?>" />
+  <!--Favicon meta-->
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon/android-icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="/favicon/android-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="/favicon/android-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-    <title><?= $scMetaOgTitle . " | " . $scMetaOgSiteName ?></title>
+  <title><?= $scMetaOgTitle . " | " . $scMetaOgSiteName ?></title>
 
 
-    <!-- Style link to fontawesome 4 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/site/app.css">
+  <!-- Style link to fontawesome 4 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/site/app.css">
 
 
 
-    <!-- <link rel="stylesheet" href="/css/site/style.css"> -->
-    <link rel="stylesheet" href="/css/<?= $scMetaPath ?>.css">
-  </head>
+  <!-- <link rel="stylesheet" href="/css/site/style.css"> -->
+  <link rel="stylesheet" href="/css/<?= $scMetaPath ?>.css">
+</head>
 
-  <body>
+<body>

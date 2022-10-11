@@ -1,0 +1,58 @@
+<header id="navigation">
+  <nav class="navbar">
+    <div>
+      <img class="logo-avatar" src="/img/quickstart.png" alt="Widepack Avatar Square">
+    </div>
+
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li>
+          <a <?= $scMetaController === 'Home' ? 'class="active"' : '' ?> href="/<?= $scMetaLanguage ?>/Home">
+            <?= $trans['menu']['home'] ?>
+          </a>
+        </li>
+        <li>
+          <a <?= $scMetaController === 'About' ? 'class="active"' : '' ?> href="/<?= $scMetaLanguage ?>/About">
+            <?= $trans['menu']['about'] ?>
+          </a>
+        </li>
+        <li>
+          <a <?= $scMetaController === 'Services' ? 'class="active"' : '' ?> href="/<?= $scMetaLanguage ?>/Services">
+            <?= $trans['menu']['services'] ?>
+          </a>
+        </li>
+        <li>
+          <a <?= $scMetaController === 'Products' ? 'class="active"' : '' ?> href="/<?= $scMetaLanguage ?>/Products">
+            <?= $trans['menu']['products'] ?>
+          </a>
+        </li>
+        <li>
+          <a <?= $scMetaController === 'Sales' ? 'class="active"' : '' ?> href="/<?= $scMetaLanguage ?>/Sales">
+            <?= $trans['menu']['sales'] ?>
+          </a>
+        </li>
+        <li>
+          <a <?= $scMetaController === 'Contact' ? 'class="active"' : '' ?> href="/<?= $scMetaLanguage ?>/Contact">
+            <?= $trans['menu']['contact'] ?>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="navbar-lang-links">
+      <ul>
+        <li><a <?= $scMetaLanguage === 'en' ? 'class="active"' : '' ?> href="/en/<?= $scMetaController ?>">En</a>
+        </li>
+        <li>
+          <a <?= $scMetaLanguage === 'nl' ? 'class="active"' : '' ?> href="/nl/<?= $scMetaController ?>">Nl</a>
+        </li>
+        <li><a <?= $scMetaLanguage === 'fr' ? 'class="active"' : '' ?> href="/fr/<?= $scMetaController ?>">Fr</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

@@ -4,33 +4,7 @@
 @use 'themes';
 
 #home {
-  background-image: url('~/src/img/widepack-hq.png');
-
-  .grid {
-    display: grid;
-    gap: 2em;
-    grid-template-columns: 1em repeat(3, 1fr) 1em;
-    grid-template-areas:
-      '. one  one   one     .'
-      '. two  two   two     .'
-      '. .    three three   .';
-  }
-
-  .logo {
-    grid-area: one;
-  }
-  .content {
-    grid-area: two;
-    padding-block: 1em;
-
-    p {
-      color: var(--text3);
-      font-size: ver(--fs-600);
-    }
-  }
-  button {
-    grid-area: three;
-  }
+  background-image: url('~/src/img/quickstart-github-banner.png');
 
   /* END HOME */
 }
