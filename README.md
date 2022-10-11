@@ -1,3 +1,5 @@
+![QuickStart](./quickstart.png)
+
 # QuickStart DockerCompose LEMP PHP-MVC Scss Webpack 5
 
 QuickStart is a project from [ScorpioCoding.com](https://scorpiocoding.com) which creates cool startup applications for others to use. This current project has been a long time in the making.
