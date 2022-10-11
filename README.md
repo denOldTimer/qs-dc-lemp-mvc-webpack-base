@@ -41,3 +41,89 @@ Webpack-PurgeCss-Plugin is stil version 4.1.3 due to the fact version 5.0 give's
 ```
 PurgeCss IS NOT A CONSTRUCTOR
 ```
+
+---
+
+## HOW To use
+
+1. Clone the repo
+
+```
+https://github.com/denOldTimer/qs-dc-lemp-mvc-webpack-base.git
+```
+
+2. Change directory => development
+
+```
+cd development
+```
+
+3. Run npm install
+
+```
+npm install
+```
+
+4. Run Webpack from the Development Directory Once
+
+```
+npm start
+```
+
+5. Start developing.
+
+---
+
+## Developing
+
+Activate Docker Compose
+
+- open a terminal in the root directory where the docker compose file is.
+- run the command :
+
+```
+docker compose up -d --build
+```
+
+Runs the docker compose in detached mode and is always running.  
+So when finish developing for the day do NOT forget to `down` everything.  
+To shut it down when need to, use the command:
+
+```
+docker compose down
+```
+
+Create entry points in `webpack.common.js` for example: About
+
+```
+"site/about": [
+      path.resolve(__dirname, "../src/site/js/about.js"),
+      path.resolve(__dirname, "../src/site/scss/about.scss"),
+      path.resolve(__dirname, "../src/site/views/about.phtml"),
+    ],
+```
+
+Create the 3 about files in the `src` directory
+
+```
+/src/site/js/about.js
+/src/site/scss/about.scss
+/src/site/views/about.phtml
+```
+
+Create The `About.php` Controller, just copy, paste and rename the Home Controller
+
+Run Webpack
+
+```
+npm start
+```
+
+or
+
+```
+npm run watch
+```
+
+Open your favourite browser and go to localhost:9580 and refresh 'F5'.  
+ Sorry no hot reloading.
