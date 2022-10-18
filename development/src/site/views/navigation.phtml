@@ -1,7 +1,7 @@
-<header id="navigation">
+<header id="navigation" class="surface4 textNav">
   <nav class="navbar">
-    <div>
-      <img class="logo-avatar" src="/img/quickstart.png" alt="Widepack Avatar Square">
+    <div class="brand-title">
+      <img class="logo-avatar" src="/img/quickstart.png" alt="Quickstart Logo">
     </div>
 
     <a href="#" class="toggle-button">
@@ -10,7 +10,7 @@
       <span class="bar"></span>
     </a>
     <div class="navbar-links">
-      <ul>
+      <ul class="links">
         <li>
           <a <?= $scMetaController === 'Home' ? 'class="active"' : '' ?> href="/<?= $scMetaLanguage ?>/Home">
             <?= $trans['menu']['home'] ?>
@@ -43,9 +43,7 @@
         </li>
       </ul>
 
-    </div>
-    <div class="navbar-lang-links">
-      <ul>
+      <ul class="links-lang">
         <li><a <?= $scMetaLanguage === 'en' ? 'class="active"' : '' ?> href="/en/<?= $scMetaController ?>">En</a>
         </li>
         <li>
@@ -53,6 +51,14 @@
         </li>
         <li><a <?= $scMetaLanguage === 'fr' ? 'class="active"' : '' ?> href="/fr/<?= $scMetaController ?>">Fr</a></li>
       </ul>
+      <div style="display: flex; padding: 0.5rem">
+        <select id="theme" class="select">
+          <option value="auto" selected>Theme</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="dim">Dim</option>
+        </select>
+      </div>
     </div>
   </nav>
 </header>

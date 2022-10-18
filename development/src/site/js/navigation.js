@@ -1,8 +1,13 @@
-const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-const navbarLangLinks = document.getElementsByClassName("navbar-lang-links")[0];
+document.getElementsByClassName("toggle-button")[0].onclick = function () {
+  if (navbarLinks.style.display == "none" || navbarLinks.style.display == "") {
+    navbarLinks.style.display = "flex";
+  } else {
+    navbarLinks.style.display = "none";
+  }
+};
 
-toggleButton.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
-  navbarLangLinks.classList.toggle("active");
-});
+const switcher = document.querySelector("#theme");
+const doc = document.firstElementChild;
+switcher.addEventListener("input", (e) => setTheme(e.target.value));
+const setTheme = (theme) => doc.setAttribute("color-scheme", theme);

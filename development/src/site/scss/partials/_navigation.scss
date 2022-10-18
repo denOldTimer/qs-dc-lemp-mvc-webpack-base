@@ -1,0 +1,144 @@
+//
+
+header {
+  min-height: var(--header-min-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--surface4);
+  color: var(--text-brand);
+  height: 100%;
+}
+
+.brand-title {
+  margin: 0.5rem;
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+.toggle-button .bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--text3);
+  border-radius: 10px;
+}
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-links ul {
+  margin: 0;
+  padding-inline: 2rem;
+  display: flex;
+}
+.navbar-links li {
+  list-style: none;
+  padding: 0.5rem;
+  border-top: 4px solid transparent;
+
+  .active {
+    color: var(--text-accent);
+  }
+}
+.navbar-links li:hover {
+  background-color: var(--surface1);
+  border-top: 4px solid var(--text-accent);
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text3);
+  display: block;
+}
+
+.navbar-links .links a {
+  padding: 0 0.75rem;
+}
+.navbar .links-lang {
+  align-items: center;
+}
+
+@media (max-width: 64em) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-links .links {
+    flex-direction: column;
+  }
+  .navbar-links a {
+    padding: 0.25rem 0.75rem;
+  }
+}
+
+/* ---- THE SELECT COMPONENT --- */
+/* resetting the select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+/* customizing the select */
+.select {
+  min-width: 10ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.select::after {
+  content: '';
+  width: 0.8em;
+  height: 0.5em;
+  background-color: green;
+}
