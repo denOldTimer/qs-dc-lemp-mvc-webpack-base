@@ -13,6 +13,18 @@
   --clr-blue-hue: 250; //hsl(240,100%,66%)
   --clr-green-hue: 120; //hsl(120, 100% , 66%)
 
-  --clr-saturation: 100%;
-  --clr-light: 66%;
+  --clr-saturation-brand: 100%;
+  --clr-light-brand: 33%;
+  --clr-saturation-accent: 100%;
+  --clr-light-accent: 66%;
+}
+
+:root {
+  --brand-hue: var(--clr-boston-hue);
+  --accent-hue: var(--clr-crimson-hue);
+  --scorpio-hue: var(--clr-crimson-hue);
+  --sat-br: var(--clr-saturation-brand);
+  --light-br: var(--clr-light-brand);
+  --sat-ac: var(--clr-saturation-accent);
+  --light-ac: var(--clr-light-accent);
 }

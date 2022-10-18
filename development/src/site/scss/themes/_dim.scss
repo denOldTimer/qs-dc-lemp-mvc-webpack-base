@@ -6,18 +6,20 @@
   :root {
     color-scheme: dim;
 
-    --brand-hue: var(--clr-blue-hue);
-    --accent-hue: var(--clr-crimson-hue);
-    --scorpio-hue: var(--clr-crimson-hue);
-    --sat: var(--clr-saturation);
-    --light: var(--clr-light);
+    // --brand-hue: var(--clr-blue-hue);
+    // --accent-hue: var(--clr-crimson-hue);
+    // --scorpio-hue: var(--clr-crimson-hue);
+    // --sat-br: var(--clr-saturation-brand);
+    // --light-br: var(--clr-light-brand);
+    // --sat-ac: var(--clr-saturation-accent);
+    // --light-ac: var(--clr-light-accent);
 
     /* set defaults */
-    --brand: hsl(var(--brand-hue) var(--sat) var(--light));
-    --accent: hsl(var(--accent-hue) var(--sat) var(--light));
-    --text-brand: hsl(var(--brand-hue) calc(var(--sat) / 1.5) var(--light));
-    --text-accent: hsl(var(--accent-hue) calc(var(--sat) / 1.5) var(--light));
-    --text-scorpio: hsl(var(--scorpio-hue) calc(var(--sat) / 1.5) var(--light));
+    --brand: hsl(var(--brand-hue) var(--sat-br) var(--light-br));
+    --accent: hsl(var(--accent-hue) var(--sat-ac) var(--light-br));
+    --text-brand: hsl(var(--brand-hue) calc(var(--sat-br) / 1.5) var(--light-br));
+    --text-accent: hsl(var(--accent-hue) calc(var(--sat-ac) / 1.5) var(--light-ac));
+    --text-scorpio: hsl(var(--scorpio-hue) 75% 66%);
     --text1: hsl(var(--brand-hue) 15% 75%);
     --text2: hsl(var(--brand-hue) 10% 60%);
     --surface1: hsl(var(--brand-hue) 10% 20%);
@@ -33,11 +35,11 @@
 [color-scheme='dim'] {
   color-scheme: dim;
 
-  --brand: hsl(var(--brand-hue) calc(var(--sat) / 2) var(--light));
-  --accent: hsl(var(--accent-hue) calc(var(--sat) / 2) var(--light));
-  --text-brand: hsl(var(--brand-hue) calc(var(--sat) / 2) var(--light));
-  --text-accent: hsl(var(--accent-hue) calc(var(--sat) / 2) var(--light));
-  --text-scorpio: hsl(var(--scorpio-hue) calc(var(--sat) / 1.5) var(--light));
+  --brand: hsl(var(--brand-hue) var(--sat-br) var(--light-br));
+  --accent: hsl(var(--accent-hue) var(--sat-ac) var(--light-br));
+  --text-brand: hsl(var(--brand-hue) calc(var(--sat-br) / 1.5) var(--light-br));
+  --text-accent: hsl(var(--accent-hue) calc(var(--sat-ac) / 1.5) var(--light-ac));
+  --text-scorpio: hsl(var(--scorpio-hue) 75% 66%);
   --text1: hsl(var(--brand-hue) 15% 75%);
   --text2: hsl(var(--brand-hue) 10% 60%);
   --surface1: hsl(var(--brand-hue) 10% 20%);
