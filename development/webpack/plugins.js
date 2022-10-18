@@ -7,6 +7,7 @@ const _ESLintPlugin = require("eslint-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const _CopyPlugin = require("copy-webpack-plugin");
 const _PurgeCSSPlugin = require("purgecss-webpack-plugin");
+const _BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 const PurgecssPlugin = new _PurgeCSSPlugin({
   paths: glob.sync([
@@ -59,6 +60,26 @@ const CopyPlugin = new _CopyPlugin({
   ],
 });
 
+const BrowserSyncPlugin = new _BrowserSyncPlugin(
+  {
+    host: "localhost",
+    port: 9085,
+    proxy: "http://127.0.0.1:9580",
+    files: [
+      {
+        match: ["**/*.phtml", "**/*.scss", "**/*.js,"],
+        fn: function (event) {
+          if (event === "change") {
+            const bs = require("browser-sync").get("bs-webpack-plugin");
+            bs.reload();
+          }
+        },
+      },
+    ],
+  },
+  { reload: false }
+);
+
 module.exports = {
   CleanWebpackPlugin: new CleanWebpackPlugin(),
   MiniCssExtractPlugin: MiniCssExtractPlugin,
@@ -66,4 +87,5 @@ module.exports = {
   ESLintPlugin: ESLintPlugin,
   //StyleLintPlugin: StyleLintPlugin,
   CopyPlugin: CopyPlugin,
+  BrowserSyncPlugin: BrowserSyncPlugin,
 };

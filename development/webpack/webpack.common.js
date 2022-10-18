@@ -70,5 +70,6 @@ module.exports = {
     //plugins.StyleLintPlugin,
     plugins.MiniCssExtractPlugin,
     plugins.CopyPlugin,
+    plugins.BrowserSyncPlugin,
   ],
 };
