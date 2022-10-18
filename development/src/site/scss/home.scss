@@ -1,10 +1,14 @@
+@use 'abstracts';
 @use 'base';
 @use 'components';
 @use 'partials';
 @use 'themes';
 
 #home {
-  background-image: url('~/src/img/quickstart-github-banner.png');
+  background-image: url('~/src/img/header-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   /* END HOME */
 }
