@@ -1,18 +1,11 @@
-:root {
-  --fs-xxl: 3.5rem;
-  --fs-xl: 3rem;
-  --fs-l: 2rem;
-  --fs-m: 1.5rem;
-  --fs-r: 1rem;
-  --fs-s: 0.75rem;
-  --fs-xs: 0.5rem;
-}
-
-$bg-color: red;
-
-body {
-  background-color: $bg-color;
-}
-h1 {
-  font-size: var(--fs-xxl);
-}
+<main id="login">
+  <form class="formContainer" action=" /en/Login/login" method="post">
+    <label for="email">E-mail</label><br>
+    <input type="email" name="email" id="email"><br>
+    <br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" id="password"><br>
+    <br>
+    <input type="submit" value="Login">
+  </form>
+</main>

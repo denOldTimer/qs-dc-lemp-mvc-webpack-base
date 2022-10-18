@@ -28,13 +28,14 @@ return (object) array(
 
 
   //BACKEND ROUTES
+  '/admin'              => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
   '/admin/login'        => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
   '/admin/login/login'  => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Login', 'action' => 'login'],
   '/admin/logout'       => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Logout', 'action' => 'index'],
   '/admin/dashboard'    => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Dashboard', 'action' => 'index'],
   '/admin/users'        => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Users', 'action' => 'index'],
 
-
+  '/{lang}/admin      '       => ['namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
   '/{lang}/admin/login'       => ['namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
   '/{lang}/admin/login/login' => ['namespace' => 'Admin', 'controller' => 'Login', 'action' => 'login'],
   '/{lang}/admin/logout'      => ['namespace' => 'Admin', 'controller' => 'Logout', 'action' => 'index'],

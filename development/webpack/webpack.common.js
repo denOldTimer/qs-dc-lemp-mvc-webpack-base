@@ -29,7 +29,22 @@ module.exports = {
       path.resolve(__dirname, "../src/site/views/home.phtml"),
     ],
 
-
+    "admin/navigation": [
+      path.resolve(__dirname, "../src/admin/js/navigation.js"),
+      path.resolve(__dirname, "../src/admin/views/navigation.phtml"),
+      path.resolve(__dirname, "../src/admin/views/header.phtml"),
+      path.resolve(__dirname, "../src/admin/views/footer.phtml"),
+    ],
+    "admin/login": [
+      path.resolve(__dirname, "../src/admin/js/login.js"),
+      path.resolve(__dirname, "../src/admin/scss/login.scss"),
+      path.resolve(__dirname, "../src/admin/views/login.phtml"),
+    ],
+    "admin/logout": [
+      path.resolve(__dirname, "../src/admin/js/logout.js"),
+      path.resolve(__dirname, "../src/admin/scss/logout.scss"),
+      path.resolve(__dirname, "../src/admin/views/logout.phtml"),
+    ],
   },
 
   ///

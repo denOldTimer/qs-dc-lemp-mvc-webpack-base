@@ -4,12 +4,12 @@
 
 date_default_timezone_set('Europe/Brussels');
 
-$company_name = "Widepack";
-$company_description = "Your Solution in Industrial Packaging";
-$company_keywords = "Widepack, Packaging, Industrial, Belgium, Europe";
-$company_domain_name = "Widepack.be";
-$company_url = "http://widepack.be";
-$company_img_dir = "http://widepack.be/img/widepack-hq.png";
+$company_name = "QuickStart";
+$company_description = "Design & Development of Web Solutions";
+$company_keywords = "Webdevelopment, Industrial, Belgium, Europe";
+$company_domain_name = "domain.com";
+$company_url = "http://domain.com";
+$company_img_dir = "http://domain.be/img/base-image.png";
 
 $html_encoding = "UTF-8";
 $html_type = "website";
@@ -31,7 +31,7 @@ $copy_right .= "<a class='domain-name' href=" . $company_url . " >" . $company_d
 $google_verification_code = "------ Google Verification Code -------";
 
 $twitter_handle = "@YourTwitterHandle";
-$twitter_domain = "Widepack";
+$twitter_domain = "Your Domain";
 
 $pintRest_verification_code = "------ Pintrest Verification Code -------";
 

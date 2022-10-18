@@ -1,0 +1,30 @@
+/* COLOR PALETTE */
+
+* {
+  --clr-boston-hue: 215;
+  --clr-fern-hue: 150;
+  --clr-razzle-hue: 310;
+  --clr-crimson-hue: 360;
+  --clr-crimson-dark-hue: 0; // hsl(0,100%, 56%)
+  --clr-coral-hue: 30;
+  --clr-sun-hue: 50;
+  --clr-royal-hue: 280;
+
+  --clr-blue-hue: 250; //hsl(240,100%,66%)
+  --clr-green-hue: 120; //hsl(120, 100% , 66%)
+
+  --clr-saturation-brand: 100%;
+  --clr-light-brand: 33%;
+  --clr-saturation-accent: 100%;
+  --clr-light-accent: 66%;
+}
+
+:root {
+  --brand-hue: var(--clr-blue-hue);
+  --accent-hue: var(--clr-crimson-hue);
+  --scorpio-hue: var(--clr-crimson-hue);
+  --sat-br: var(--clr-saturation-brand);
+  --light-br: var(--clr-light-brand);
+  --sat-ac: var(--clr-saturation-accent);
+  --light-ac: var(--clr-light-accent);
+}

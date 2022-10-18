@@ -1,18 +1,7 @@
-:root {
-  --fs-xxl: 3.5rem;
-  --fs-xl: 3rem;
-  --fs-l: 2rem;
-  --fs-m: 1.5rem;
-  --fs-r: 1rem;
-  --fs-s: 0.75rem;
-  --fs-xs: 0.5rem;
-}
+@use 'base';
+@use 'components';
+@use 'themes';
 
-$bg-color: red;
-
-body {
-  background-color: $bg-color;
-}
-h1 {
-  font-size: var(--fs-xxl);
+#login {
+  background-color: var(--surface4);
 }

@@ -1,0 +1,20 @@
+.card {
+  background-color: var(--surface4);
+  box-shadow: 0 8px 16px hsl(var(--shadow) / calc(var(--shadow-strength) + 0.03));
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 16px 32px hsl(var(--shadow) / calc(var(--shadow-strength) + 0.03));
+  }
+
+  .card__container {
+    padding: 2px 16px;
+
+    p {
+      padding: 0.5em;
+
+      span {
+        margin-left: 5em;
+      }
+    }
+  }
+}
