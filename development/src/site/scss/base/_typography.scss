@@ -1,1 +1,54 @@
 /* GENERAL TYPOGRAPHY INFORMATION */
+@use '../abstracts/mixins' as mix;
+
+:root {
+  --ff-b: var(--ff-brand);
+  --fw-b: var(--fs-300);
+  --fs-b: var(--fs-300);
+  --lh-b: 1.5;
+  --ff-h: var(--ff-accent);
+  --fw-h: var(--fw-400);
+  --fs-h1: var(--fs-700);
+  --fs-h2: var(--fs-600);
+  --fs-h3: var(--fs-500);
+  --lh-h: 1;
+}
+
+@include mix.mq() {
+  :root {
+    --ff-b: var(--ff-brand);
+    --fw-b: var(--fs-400);
+    --fs-b: var(--fs-400);
+    --lh-b: 1.5;
+    --ff-h: var(--ff-accent);
+    --fw-h: var(--fw-700);
+    --fs-h1: var(--fs-800);
+    --fs-h2: var(--fs-700);
+    --fs-h3: var(--fs-500);
+    --lh-h: 1;
+  }
+}
+
+body {
+  font-family: var(--ff-b);
+  font-weight: var(--fw-b);
+  font-size: var(--fs-b);
+  line-height: var(--lh-b);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-h);
+  font-weight: var(--fw-h);
+  line-height: var(--lh-h);
+}
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}

@@ -7,23 +7,24 @@
     // --brand-hue: var(--clr-blue-hue);
     // --accent-hue: var(--clr-crimson-hue);
     // --scorpio-hue: var(--clr-crimson-hue);
-    // --sat-br: var(--clr-saturation-brand);
-    // --light-br: var(--clr-light-brand);
-    // --sat-ac: var(--clr-saturation-accent);
+    // --brand-sat: var(--clr-saturation-brand);
+    // --brand-light: var(--clr-light-brand);
+    // --accent-sat: var(--clr-saturation-accent);
     // --light-ac: var(--clr-light-accent);
 
     /* set defaults */
-    --brand: hsl(var(--brand-hue) var(--sat-br) var(--light-br));
-    --accent: hsl(var(--accent-hue) var(--sat-ac) var(--light-br));
-    --text-brand: hsl(var(--brand-hue) calc(var(--sat-br) / 2) var(--light-br));
-    --text-accent: hsl(var(--accent-hue) calc(var(--sat-br) / 2) var(--light-br));
+    --brand: hsl(var(--brand-hue) var(--brand-sat) var(--brand-light));
+    --accent: hsl(var(--accent-hue) var(--accent-sat) var(--accent-light));
+    --text-brand: hsl(var(--brand-hue) calc(var(--brand-sat) / 2) var(--brand-light));
+    --text-accent: hsl(var(--accent-hue) calc(var(--brand-sat) / 2) var(--accent-light));
     --text-scorpio: hsl(var(--scorpio-hue) 50% 66%);
-    --text1: hsl(var(--brand-hue) 15% 85%);
+    --text1: hsl(var(--brand-hue) calc(var(--brand-sat) / 2) 85%);
     --text2: hsl(var(--brand-hue) 5% 65%);
-    --surface1: hsl(var(--brand-hue) 10% 10%);
-    --surface2: hsl(var(--brand-hue) 10% 15%);
-    --surface3: hsl(var(--brand-hue) 5% 20%);
-    --surface4: hsl(var(--brand-hue) 5% 25%);
+    --text3: hsl(var(--brand-hue) var(--brand-sat) 10%);
+    --surface1: hsl(var(--brand-hue) 5% 25%); //light 5% 25%
+    --surface2: hsl(var(--brand-hue) 5% 20%); //normal 5% 20%
+    --surface3: hsl(var(--brand-hue) 10% 15%); //medium 10% 15%
+    --surface4: hsl(var(--brand-hue) 10% 10%); //dark 10% 10%
     --shadow: var(--brand-hue) 50% 3%;
     --shadow-strength: 0.7;
   }
@@ -33,17 +34,18 @@
 [color-scheme='dark'] {
   color-scheme: dark;
 
-  --brand: hsl(var(--brand-hue) var(--sat-br) var(--light-br));
-  --accent: hsl(var(--accent-hue) var(--sat-ac) var(--light-br));
-  --text-brand: hsl(var(--brand-hue) calc(var(--sat-br) / 2) var(--light-br));
-  --text-accent: hsl(var(--accent-hue) calc(var(--sat-br) / 2) var(--light-br));
+  --brand: hsl(var(--brand-hue) var(--brand-sat) var(--brand-light));
+  --accent: hsl(var(--accent-hue) var(--accent-sat) var(--accent-light));
+  --text-brand: hsl(var(--brand-hue) calc(var(--brand-sat) / 2) var(--brand-light));
+  --text-accent: hsl(var(--accent-hue) calc(var(--accent-sat) / 2) var(--accent-light));
   --text-scorpio: hsl(var(--scorpio-hue) 50% 66%);
-  --text1: hsl(var(--brand-hue) 15% 85%);
+  --text1: hsl(var(--brand-hue) calc(var(--brand-sat) / 2) 85%);
   --text2: hsl(var(--brand-hue) 5% 65%);
-  --surface1: hsl(var(--brand-hue) 10% 10%);
-  --surface2: hsl(var(--brand-hue) 10% 15%);
-  --surface3: hsl(var(--brand-hue) 5% 20%);
-  --surface4: hsl(var(--brand-hue) 5% 25%);
+  --text3: hsl(var(--brand-hue) var(--brand-sat) 10%);
+  --surface1: hsl(var(--brand-hue) 5% 25%); //light 5% 25%
+  --surface2: hsl(var(--brand-hue) 5% 20%); //normal 5% 20%
+  --surface3: hsl(var(--brand-hue) 10% 15%); //medium 10% 15%
+  --surface4: hsl(var(--brand-hue) 10% 10%); //dark 10% 10%
   --shadow: var(--brand-hue) 50% 3%;
   --shadow-strength: 0.8;
 }

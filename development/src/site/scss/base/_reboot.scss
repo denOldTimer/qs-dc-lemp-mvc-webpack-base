@@ -9,15 +9,6 @@
 
 html {
   block-size: 100%;
-  background-color: var(--surface1);
-  color: var(--text1);
-}
-
-body {
-  color: var(--text1);
-  font-family: var(--ff-brand);
-  font-size: var(--fs-400);
-  font-weight: var(--fw-400);
 }
 
 main {
@@ -34,46 +25,6 @@ main {
 }
 .grid {
   margin-top: 6rem;
-}
-
-a {
-  color: var(--text1);
-  font-family: var(--ff-base);
-  font-weight: var(--fw-500);
-  text-decoration: var(--f-text-dec);
-}
-
-h1,
-.h1 {
-  color: var(--text1);
-  font-family: var(--ff-base);
-  font-weight: var(--fw-700);
-  font-size: var(--fs-700);
-}
-h2,
-.h2 {
-  color: var(--text1);
-  font-family: var(--ff-base);
-  font-weight: var(--fw-600);
-  font-size: var(--fs-600);
-}
-h3,
-.h3 {
-  color: var(--text1);
-  font-family: var(--ff-base);
-  font-weight: var(--fw-500);
-  font-size: var(--fs-500);
-}
-
-.h1-accent {
-  font-size: var(--fs-700);
-  font-family: var(--ff-accent);
-  color: var(--text-accent);
-}
-.h2-accent {
-  font-size: var(--fs-400);
-  font-family: var(--ff-accent);
-  color: var(--text-accent);
 }
 
 .sectionOverlay {

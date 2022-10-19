@@ -18,11 +18,6 @@ module.exports = {
       path.resolve(__dirname, "../src/site/scss/theme.scss"),
       path.resolve(__dirname, "../src/site/views/theme.phtml"),
     ],
-    "site/markdown": [
-      path.resolve(__dirname, "../src/site/js/markdown.js"),
-      path.resolve(__dirname, "../src/site/scss/markdown.scss"),
-      path.resolve(__dirname, "../src/site/views/markdown.phtml"),
-    ],
     "site/home": [
       path.resolve(__dirname, "../src/site/js/home.js"),
       path.resolve(__dirname, "../src/site/scss/home.scss"),
