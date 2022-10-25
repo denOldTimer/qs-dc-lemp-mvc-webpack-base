@@ -1,10 +1,13 @@
-    <footer>
-      <p><?php echo $scMetaCopyright; ?></p>
-      <p>powered by <span class="scorpio">Quickstart</span> created by
-        <span class="scorpio">
-          <a href="https://scorpiocoding.com">ScorpioCoding.com</a>
-        </span>
-      </p>
+    <footer class="surface4">
+      <div class="copyright">
+        <p>&copy <?= $scMetaCopyYears ?>
+          <a class='domain' href=" <?= $scMetaOgUrl ?>"><?= $scMetaOgSiteName ?></a>
+        </p>
+        <p> powered by <a class='scorpio' href='https://scorpiocoding.com' target='_blank'>Quickstart</a> created by <a
+            class='scorpio' href='https://scorpiocoding.com' target='_blank'>ScorpioCoding.com</a>
+
+        </p>
+      </div>
     </footer>
     <script src="/js/site/navigation.js" defer></script>
     <script src="/js/<?php echo $scMetaPath; ?>.js" defer></script>

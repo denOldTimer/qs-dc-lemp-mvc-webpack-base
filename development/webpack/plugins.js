@@ -11,8 +11,8 @@ const _BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 const PurgecssPlugin = new _PurgeCSSPlugin({
   paths: glob.sync([
-    path.resolve(__dirname, "../src/site/views/*phtml"),
-    path.resolve(__dirname, "../src/admin/views/*phtml"),
+    path.resolve(__dirname, "../src/site/views/*.phtml"),
+    path.resolve(__dirname, "../src/admin/views/*.phtml"),
   ]),
 });
 

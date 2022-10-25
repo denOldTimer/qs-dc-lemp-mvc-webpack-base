@@ -40,6 +40,17 @@ module.exports = {
       path.resolve(__dirname, "../src/admin/scss/logout.scss"),
       path.resolve(__dirname, "../src/admin/views/logout.phtml"),
     ],
+    "admin/register": [
+      path.resolve(__dirname, "../src/admin/js/register.js"),
+      path.resolve(__dirname, "../src/admin/scss/register.scss"),
+      path.resolve(__dirname, "../src/admin/views/register.phtml"),
+      path.resolve(__dirname, "../src/admin/views/registerSuccess.phtml"),
+    ],
+    "admin/dashboard": [
+      path.resolve(__dirname, "../src/admin/js/dashboard.js"),
+      path.resolve(__dirname, "../src/admin/scss/dashboard.scss"),
+      path.resolve(__dirname, "../src/admin/views/dashboard.phtml"),
+    ],
   },
 
   ///
@@ -60,11 +71,11 @@ module.exports = {
   plugins: [
     new webpack.ProgressPlugin(),
     plugins.CleanWebpackPlugin,
-    plugins.PurgecssPlugin,
     plugins.ESLintPlugin,
     //plugins.StyleLintPlugin,
     plugins.MiniCssExtractPlugin,
     plugins.CopyPlugin,
+    plugins.PurgecssPlugin,
     plugins.BrowserSyncPlugin,
   ],
 };

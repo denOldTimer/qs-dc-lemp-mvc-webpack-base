@@ -4,14 +4,6 @@
   :root {
     color-scheme: dark;
 
-    // --brand-hue: var(--clr-blue-hue);
-    // --accent-hue: var(--clr-crimson-hue);
-    // --scorpio-hue: var(--clr-crimson-hue);
-    // --brand-sat: var(--clr-saturation-brand);
-    // --brand-light: var(--clr-light-brand);
-    // --accent-sat: var(--clr-saturation-accent);
-    // --light-ac: var(--clr-light-accent);
-
     /* set defaults */
     --brand: hsl(var(--brand-hue) var(--brand-sat) var(--brand-light));
     --accent: hsl(var(--accent-hue) var(--accent-sat) var(--accent-light));
@@ -21,6 +13,7 @@
     --text1: hsl(var(--brand-hue) calc(var(--brand-sat) / 2) 85%);
     --text2: hsl(var(--brand-hue) 5% 65%);
     --text3: hsl(var(--brand-hue) var(--brand-sat) 10%);
+    --textW: hsl(var(--brand-hue) calc(var(--brand-sat) / 2) 85%);
     --surface1: hsl(var(--brand-hue) 5% 25%); //light 5% 25%
     --surface2: hsl(var(--brand-hue) 5% 20%); //normal 5% 20%
     --surface3: hsl(var(--brand-hue) 10% 15%); //medium 10% 15%
@@ -42,6 +35,7 @@
   --text1: hsl(var(--brand-hue) calc(var(--brand-sat) / 2) 85%);
   --text2: hsl(var(--brand-hue) 5% 65%);
   --text3: hsl(var(--brand-hue) var(--brand-sat) 10%);
+  --textW: hsl(var(--brand-hue) calc(var(--brand-sat) / 2) 85%);
   --surface1: hsl(var(--brand-hue) 5% 25%); //light 5% 25%
   --surface2: hsl(var(--brand-hue) 5% 20%); //normal 5% 20%
   --surface3: hsl(var(--brand-hue) 10% 15%); //medium 10% 15%

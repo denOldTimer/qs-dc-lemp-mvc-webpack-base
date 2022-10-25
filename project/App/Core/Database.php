@@ -5,7 +5,6 @@ namespace App\Core;
 use PDO;
 use PDOException;
 
-use App\Config\Config;
 
 class Database extends PDO
 {

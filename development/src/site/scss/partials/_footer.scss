@@ -1,34 +1,45 @@
 footer {
-  /* position: fixed;
-  left: 0;
-  bottom: 0; */
+  // position: relative;
+  // left: 0;
+  // bottom: 0;
   width: 100%;
-  text-align: center;
   background-color: var(--surface4);
-  color: var(--text1);
-
+}
+.copyright {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  color: var(--textW);
   font-family: var(--ff-brand);
   font-size: var(--fs-300);
   padding-block: 1.5rem;
 
-  .domain-name {
-    font-weight: var(--fw-600);
-    font-family: var(--ff-brand);
+  .scorpio,
+  .domain {
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-300);
     letter-spacing: 0.1rem;
-    color: var(--text-accent);
+    text-decoration: var(--f-text-dec);
+  }
+  .domain {
+    &:link,
+    &:hover,
+    &:focus,
+    &:visited {
+      color: var(--brand);
+    }
   }
 
-  .scorpio,
-  .scorpio > a {
-    color: var(--text-scorpio);
-    font-weight: var(--fw-600);
-    letter-spacing: 0.1rem;
-
-    > a,
-    > a:hover,
-    > a:active,
-    > a:visited {
-      color: var(--text-scorpio);
+  .scorpio {
+    &:link,
+    &:hover,
+    &:active,
+    &:visited {
+      color: var(--scorpio-txt);
     }
   }
 }

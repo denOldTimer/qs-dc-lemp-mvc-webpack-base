@@ -21,7 +21,7 @@
 .btn-brand {
   @extend %btn-common;
   background-color: var(--brand);
-  color: var(--text-accent);
+  color: var(--textW);
   font-weight: var(--fw-700);
   font-family: var(--ff-accent);
   font-size: var(--fs-400);

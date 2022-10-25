@@ -36,6 +36,17 @@ class Config
     return $this->meta;
   }
 
+  /** Variables
+   * 
+   */
+  public function setVars()
+  {
+    $this->meta = include_once('vars.php');
+  }
+  public function getVars()
+  {
+    return $this->meta;
+  }
 
 
 

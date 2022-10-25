@@ -1,11 +1,26 @@
 <main id="login">
-  <form class="formContainer" action=" /en/Login/login" method="post">
-    <label for="email">E-mail</label><br>
-    <input type="email" name="email" id="email"><br>
-    <br>
-    <label for="password">Password</label><br>
-    <input type="password" name="password" id="password"><br>
-    <br>
-    <input type="submit" value="Login">
+
+
+  <?php if (!empty($data['errorList'])) : ?>
+  <div>
+    <p>Errors:</p>
+    <ul>
+      <?php foreach ($data['errorList'] as $value) : ?>
+      <li><?= $value ?></li>
+      <?php endforeach ?>
+    </ul>
+  </div>
+  <?php endif ?>
+
+
+
+  <form class="formContainer" action="/Admin/Login/create" method="post">
+    <label class="email" for="email">E-mail
+      <input type="email" name="email" id="email" placeholder="Your Email" autofocus required>
+    </label>
+    <label class="password" for="password">Password
+      <input type="password" name="password" id="password" placeholder="Your Password" required>
+    </label>
+    <input class="submit" type="submit" value="SEND">
   </form>
 </main>

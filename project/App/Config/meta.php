@@ -20,13 +20,11 @@ $html_base_homepage_action = "index";
 $html_base_homepage_path = "site/home";
 
 
-$copy_right_begin_year = "2006";
-$copy_right = "&copy ";
-$copy_right .= $copy_right_begin_year;
-$copy_right .= " - ";
-$copy_right .= date("Y");
-$copy_right .= " - ";
-$copy_right .= "<a class='domain-name' href=" . $company_url . " >" . $company_domain_name . "</a>";
+
+$copy_right_years = '2006';
+$copy_right_years .= " - ";
+$copy_right_years .= date("Y");
+$copy_right_years .= " - ";
 
 $google_verification_code = "------ Google Verification Code -------";
 
@@ -59,7 +57,10 @@ return array(
   'scMetaOgImage'                 =>    $company_img_dir,
   'scTwitterSite'                 =>    $twitter_handle,
   'scTwitterDomain'               =>    $twitter_domain,
-  'scPintRestKey'                 =>    $pintRest_verification_code
+  'scPintRestKey'                 =>    $pintRest_verification_code,
+  'scMetaScorpio'                 =>    $scorpio,
+  'scMetaCopyYears'               =>    $copy_right_years,
+  'scMetaCopyLink'                =>    $copy_right_link,
 );
 
 

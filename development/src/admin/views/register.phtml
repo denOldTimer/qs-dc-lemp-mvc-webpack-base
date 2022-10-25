@@ -1,0 +1,32 @@
+<main id="register">
+
+
+  <?php if (!empty($data['errorList'])) : ?>
+  <div>
+    <p>Errors:</p>
+    <ul>
+      <?php foreach ($data['errorList'] as $value) : ?>
+      <li><?= $value ?></li>
+      <?php endforeach ?>
+    </ul>
+  </div>
+  <?php endif ?>
+
+
+  <form id="formRegister" class="formContainer" action="/admin/register/create" method="post">
+
+    <label class="name" for="name">Name
+      <input type="text" name="name" id="name" value="<?= $data['user']['name'] ?>" required>
+    </label>
+    <label class="email" for="email">Email
+      <input type="email" name="email" id="email" value="<?= $data['user']['email'] ?>" required>
+    </label>
+    <label class="password" for="password">Password
+      <input type="password" name="password" id="password">
+    </label>
+    <label class="repeat" for="confirm">Confirm Password
+      <input type="password" name="confirm" id="confirm">
+    </label>
+    <input class="submit" type="submit" value="SEND">
+  </form>
+</main>

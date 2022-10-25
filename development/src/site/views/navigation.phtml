@@ -1,4 +1,4 @@
-<header id="navigation" class="surface4 textNav">
+<header id="navigation" class="surface4">
   <nav class="navbar">
     <div class="brand-title">
       <img class="logo-avatar" src="/img/quickstart.png" alt="Quickstart Logo">
@@ -52,12 +52,10 @@
         <li><a <?= $scMetaLanguage === 'fr' ? 'class="active"' : '' ?> href="/fr/<?= $scMetaController ?>">Fr</a></li>
       </ul>
       <div style="display: flex; padding: 0.5rem">
-        <select id="theme" class="select">
+        <select id="theme" class="selectTheme">
           <option value="auto" selected>Theme</option>
           <option value="light">Light</option>
           <option value="dark">Dark</option>
-          <option value="dim">Dim</option>
-          <option value="crim">Crimson</option>
         </select>
       </div>
     </div>

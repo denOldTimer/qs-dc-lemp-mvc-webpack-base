@@ -57,8 +57,6 @@ class Home extends Controller
     $translator->setTranslation($args['lang']);
     $trans = $translator->getTranslation();
 
-
-
     /*
     * render the view
     * @params int 		$renderOption  (0, 1, 2)

@@ -28,19 +28,24 @@ return (object) array(
 
 
   //BACKEND ROUTES
-  '/admin'              => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
-  '/admin/login'        => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
-  '/admin/login/login'  => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Login', 'action' => 'login'],
-  '/admin/logout'       => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Logout', 'action' => 'index'],
-  '/admin/dashboard'    => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Dashboard', 'action' => 'index'],
-  '/admin/users'        => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Users', 'action' => 'index'],
+  '/admin'                      => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
+  '/admin/register'             => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Register', 'action' => 'index'],
+  '/admin/register/create'      => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Register', 'action' => 'create'],
+  '/admin/register/success'      => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Register', 'action' => 'success'],
+  '/admin/login'                => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
+  '/admin/login/create'          => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Login', 'action' => 'create'],
+  '/admin/logout'               => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Logout', 'action' => 'index'],
+  '/admin/dashboard'            => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Dashboard', 'action' => 'index'],
+  '/admin/users'                => ['lang' => 'en', 'namespace' => 'Admin', 'controller' => 'Users', 'action' => 'index'],
 
-  '/{lang}/admin      '       => ['namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
-  '/{lang}/admin/login'       => ['namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
-  '/{lang}/admin/login/login' => ['namespace' => 'Admin', 'controller' => 'Login', 'action' => 'login'],
-  '/{lang}/admin/logout'      => ['namespace' => 'Admin', 'controller' => 'Logout', 'action' => 'index'],
-  '/{lang}/admin/dashboard'   => ['namespace' => 'Admin', 'controller' => 'Dashboard', 'action' => 'index'],
-  '/{lang}/admin/users'       => ['namespace' => 'Admin', 'controller' => 'Users', 'action' => 'index'],
+  '/{lang}/admin/register'            => ['namespace' => 'Admin', 'controller' => 'Register', 'action' => 'index'],
+  '/{lang}/admin/register/create'     => ['namespace' => 'Admin', 'controller' => 'Register', 'action' => 'create'],
+  '/{lang}/admin/register/success'     => ['namespace' => 'Admin', 'controller' => 'Register', 'action' => 'success'],
+  '/{lang}/admin/login'               => ['namespace' => 'Admin', 'controller' => 'Login', 'action' => 'index'],
+  '/{lang}/admin/login/create'         => ['namespace' => 'Admin', 'controller' => 'Login', 'action' => 'create'],
+  '/{lang}/admin/logout'              => ['namespace' => 'Admin', 'controller' => 'Logout', 'action' => 'index'],
+  '/{lang}/admin/dashboard'           => ['namespace' => 'Admin', 'controller' => 'Dashboard', 'action' => 'index'],
+  '/{lang}/admin/users'               => ['namespace' => 'Admin', 'controller' => 'Users', 'action' => 'index'],
 
 
 

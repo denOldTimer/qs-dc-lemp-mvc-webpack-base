@@ -15,11 +15,11 @@ class Dashboard extends Controller
 {
   protected function before()
   {
-    session_start();
-    if (!isset($_SESSION['loggedIN'])) {
-      header('Location: /en/Admin/Login');
-      exit();
-    }
+    // session_start();
+    // if (!isset($_SESSION['loggedIN'])) {
+    //   header('Location: /en/Admin/Login');
+    //   exit();
+    // }
   }
 
   public function indexAction($args = array())
