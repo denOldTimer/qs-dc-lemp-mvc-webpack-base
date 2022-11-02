@@ -94,10 +94,10 @@ class Router
         throw new \Exception("ROUTER :: The Controller '$controller' was not found");
       }
     } else {
-      //TODO REDIRECT HEADER TO 404
+      //TODO REDIRECT HEADER TO CUSTOM 404
       //throw new \Exception('ROUTER :: No route matched.', 404);
       header('HTTP/1.1 404 Not Found');
-      header("Refresh:0; url=search.php");
+      header("Refresh:0; url=404.php");
     }
   }
 
