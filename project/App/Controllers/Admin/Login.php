@@ -112,7 +112,7 @@ class Login extends Controller
     if ($user) {
       session_start();
       $_SESSION['loggedIN'] = '1';
-      $_SESSION['email'] = $email;
+      $_SESSION['email'] = $user['email'];
       $_SESSION['permission'] = $user['permission'];
       $_SESSION['userId'] = $user['id'];
       header('Location: /Admin/Dashboard', true, 303);
