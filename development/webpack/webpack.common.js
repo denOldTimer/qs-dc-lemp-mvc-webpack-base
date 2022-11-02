@@ -23,6 +23,11 @@ module.exports = {
       path.resolve(__dirname, "../src/site/scss/home.scss"),
       path.resolve(__dirname, "../src/site/views/home.phtml"),
     ],
+    "site/about": [
+      path.resolve(__dirname, "../src/site/js/about.js"),
+      path.resolve(__dirname, "../src/site/scss/about.scss"),
+      path.resolve(__dirname, "../src/site/views/about.phtml"),
+    ],
 
     "admin/navigation": [
       path.resolve(__dirname, "../src/admin/js/navigation.js"),
